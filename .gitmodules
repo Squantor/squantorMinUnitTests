@@ -1,0 +1,3 @@
+[submodule "squantorMinUnit"]
+	path = squantorMinUnit
+	url = git@github.com:Squantor/squantorMinUnit.git
