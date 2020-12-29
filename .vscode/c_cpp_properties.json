@@ -4,6 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/squantorMinUnit/inc",
+                "${workspaceFolder}/minunit_tests_PC/inc"
             ],
             "defines": [
                 "DEBUG"

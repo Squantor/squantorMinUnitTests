@@ -21,12 +21,42 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
+#include <autoreg.hpp>
 #include <stdio.h>
 #include <iostream>
+
+void (*autoregTable[1000])(void);
+int autoregTableIndex = 0;
+
+void autoreg_construct_impl(const char *name, void (*autoreg_func)(void))
+{
+    autoregTable[autoregTableIndex] = autoreg_func;
+    autoregTableIndex++;
+}
+
+AUTOREG_ADD(foo)
+{
+    printf("executing foo\n");
+}
+
+AUTOREG_ADD(bar)
+{
+    printf("executing bar\n");
+}
+
+int autoregRun(int argc, char *argv[])
+{
+    for(int i = 0; i < autoregTableIndex; i++)
+    {
+        void (*autoregFunc)(void) = autoregTable[i];
+        autoregFunc();
+    }
+    return 0;
+}
 
 int main(int argc, char *argv[])
 //int main()
 {
-    printf("Hello World!\n");
+    AUTOREG_RUN(argc, argv);
     return 0;
 }
