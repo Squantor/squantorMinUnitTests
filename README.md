@@ -15,3 +15,5 @@ make clean
 ```
 ### Depedencies
 * [my minimal unittest framework](https://github.com/Squantor/squantorMinUnit).
+## TODO
+* add more doxygen comments
