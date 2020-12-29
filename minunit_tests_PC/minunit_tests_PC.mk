@@ -34,4 +34,6 @@ FILES += $(PROJECT)/src/main.cpp
 
 INCLUDES += -I$(PROJECT)/inc
 
+DEFINES += -DMINUNIT_MAX_TESTS=100
+
 
