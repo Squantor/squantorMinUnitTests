@@ -5,13 +5,8 @@
  * For conditions of distribution and use, see LICENSE file
  */
 #include <MinUnit.h>
-#include <stdio.h>
-#include <iostream>
 
-int main()
+MINUNIT_ADD(bar)
 {
-    // manually test minUnitCheck and minUnitFail
-    MINUNIT_RUN();
-    // check test state
-    return 0;
+    minUnitFail();
 }
