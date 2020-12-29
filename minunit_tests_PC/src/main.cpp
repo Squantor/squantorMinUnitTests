@@ -4,13 +4,22 @@
  * Copyright (c) 2020-2020 Bart Bilos
  * For conditions of distribution and use, see LICENSE file
  */
+/** 
+ * \file main.cpp
+ * 
+ * Main entrypoint for executing minunit tests
+ * 
+ */ 
 #include <MinUnit.h>
 #include <stdio.h>
-#include <iostream>
 
+/** \brief main entrypoint
+ * 
+ * Executes the minunit test framework and checks the results
+ */
 int main()
 {
-    MINUNIT_RUN();
+    minunitRun();
     // check test state
     if(minunitTestState.executed != 4)
     {
