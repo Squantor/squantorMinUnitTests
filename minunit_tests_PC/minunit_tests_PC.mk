@@ -30,9 +30,7 @@ include squantorMinUnit/MinUnit.mk
 TARGET = PC
 
 # project sources
-FILES += $(PROJECT)/src/main.cpp \
-$(PROJECT)/src/test.c \
-$(PROJECT)/src/test.cpp
+FILES += $(PROJECT)/src/main.cpp
 
 INCLUDES += -I$(PROJECT)/inc
 
