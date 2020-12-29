@@ -31,8 +31,8 @@ TARGET = PC
 
 # project sources
 FILES += $(PROJECT)/src/main.cpp \
-$(PROJECT)/src/suite1.cpp \
-$(PROJECT)/src/suite2.cpp \
+$(PROJECT)/src/minunitTests.cpp \
+$(PROJECT)/src/suite1.cpp
 
 INCLUDES += -I$(PROJECT)/inc
 

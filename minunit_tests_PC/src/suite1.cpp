@@ -6,7 +6,7 @@
  */
 #include <MinUnit.h>
 
-MINUNIT_ADD(foo)
+MINUNIT_ADD(suite1)
 {
-    minUnitCheck(1 == 1);
+    // check registration across multiple compilation units
 }

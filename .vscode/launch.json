@@ -22,7 +22,7 @@
                 "ignoreFailures": true
             }
         ]
-        "preLaunchTask": "build minunit tests PC",
+        "preLaunchTask": "build minunit tests PC"
     }
     ],
 }
