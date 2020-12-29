@@ -1,0 +1,5 @@
+# doxygen settings to override from the default config
+PROJECT_NAME = "minunit_tests_PC"
+OUTPUT_DIRECTORY = documentation/minunit_tests_PC
+INCLUDE_PATH = minunit_tests_PC/inc targets/inc
+INPUT = minunit_tests_PC/src minunit_tests_PC/inc targets/inc targets/src
