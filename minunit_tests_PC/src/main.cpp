@@ -13,6 +13,15 @@
 #include <MinUnit.h>
 #include <stdio.h>
 
+/** \brief overridden reporting function
+ * 
+ * Executes the minunit test framework and checks the results
+ */
+void minunitReport(const char * message)
+{
+    printf("%s", message);
+}
+
 /** \brief main entrypoint
  * 
  * Executes the minunit test framework and checks the results
