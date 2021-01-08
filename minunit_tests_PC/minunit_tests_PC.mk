@@ -24,7 +24,7 @@
 #
 # Version: 20201229
 
-include squantorMinUnit/MinUnit.mk
+include squantorMinUnit/squantorMinUnit.mk
 
 # project settings
 TARGET = PC
