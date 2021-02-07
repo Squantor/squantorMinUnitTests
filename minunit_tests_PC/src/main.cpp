@@ -40,7 +40,7 @@ int main()
     }
     else if(minunitTestState.failures != 0)
     {
-        printf("Tests failed\n");
+        printf("Tests that have failed\n");
     }
     else
     {

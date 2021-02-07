@@ -30,12 +30,12 @@ MINUNIT_ADD(minunitTestmutestFail)
     localState.executed = 0;
     localState.checks = 0;
     localState.failures = 0;
-    localState.failed = 0;
+    localState.flagFailed = 0;
     TestBodyMinUnitFail(&localState);
     minUnitCheck(localState.executed == 0);
     minUnitCheck(localState.checks == 1);
     minUnitCheck(localState.failures == 0);
-    minUnitCheck(localState.failed == 1);
+    minUnitCheck(localState.flagFailed == 1);
 }
 
 /**
@@ -55,12 +55,12 @@ MINUNIT_ADD(minunitTestCheckFail)
     localState.executed = 0;
     localState.checks = 0;
     localState.failures = 0;
-    localState.failed = 0;
+    localState.flagFailed = 0;
     TestBodyMinUnitCheckFail(&localState);
     minUnitCheck(localState.executed == 0);
     minUnitCheck(localState.checks == 1);
     minUnitCheck(localState.failures == 0);
-    minUnitCheck(localState.failed == 1);
+    minUnitCheck(localState.flagFailed == 1);
 }
 
 /**
@@ -80,10 +80,10 @@ MINUNIT_ADD(minunitTestCheckPass)
     localState.executed = 0;
     localState.checks = 0;
     localState.failures = 0;
-    localState.failed = 0;
+    localState.flagFailed = 0;
     TestBodyMinUnitCheckPass(&localState);
     minUnitCheck(localState.executed == 0);
     minUnitCheck(localState.checks == 1);
     minUnitCheck(localState.failures == 0);
-    minUnitCheck(localState.failed == 0);
+    minUnitCheck(localState.flagFailed == 0);
 }
