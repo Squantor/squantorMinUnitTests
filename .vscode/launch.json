@@ -10,7 +10,7 @@
         "request": "launch",
         "program": "${workspaceFolder}/bin/minunit_tests_PC/debug/minunit_tests_PC.elf",
         "args": [],
-        "stopAtEntry": true,
+        "stopAtEntry": false,
         "cwd": "${workspaceFolder}",
         "environment": [],
         "externalConsole": false,
@@ -21,7 +21,7 @@
                 "text": "-enable-pretty-printing",
                 "ignoreFailures": true
             }
-        ]
+        ],
         "preLaunchTask": "build minunit tests PC"
     }
     ],
