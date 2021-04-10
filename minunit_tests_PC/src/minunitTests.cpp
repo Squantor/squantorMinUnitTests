@@ -13,6 +13,34 @@
  * 
  */ 
 
+int testSetupExecuted;
+
+/**
+ * \brief test testSetup function
+ */
+void minunitTestSetup(void)
+{
+    testSetupExecuted = 123456789;
+    return;
+}
+
+/**
+ * \brief test testTeardown function
+ */
+void minunitTestTeardown(void)
+{
+    return;
+}
+
+/**
+ * \brief Test setup and teardown functions
+ */
+MINUNIT_ADD(minunitTestSetupFunc, minunitTestSetup, minunitTestTeardown)
+{
+    minUnitCheck(testSetupExecuted == 123456789);
+    // I cant see how to test teardown just yet
+}
+
 /**
  * \brief helper function to test automatic failure
  */

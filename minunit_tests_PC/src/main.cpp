@@ -30,11 +30,11 @@ int main()
 {
     minunitRun();
     // check test state
-    if(minunitTestState.executed != 4)
+    if(minunitTestState.executed != 5)
     {
         printf("incorrect number of tests executed\n");
     }
-    else if(minunitTestState.checks != 12)
+    else if(minunitTestState.checks != 13)
     {
         printf("incorrect number of checks executed\n");
     }
