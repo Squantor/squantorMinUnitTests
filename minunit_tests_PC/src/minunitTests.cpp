@@ -24,7 +24,7 @@ void TestBodyMinUnitFail( minunitState *testResults)
 /**
  * \brief Test passing mutest check
  */
-MINUNIT_ADD(minunitTestmutestFail)
+MINUNIT_ADD(minunitTestmutestFail, NULL, NULL)
 {
     minunitState localState;
     localState.executed = 0;
@@ -49,7 +49,7 @@ void TestBodyMinUnitCheckFail( minunitState *testResults)
 /**
  * \brief Test passing mutest check
  */
-MINUNIT_ADD(minunitTestCheckFail)
+MINUNIT_ADD(minunitTestCheckFail, NULL, NULL)
 {
     minunitState localState;
     localState.executed = 0;
@@ -74,7 +74,7 @@ void TestBodyMinUnitCheckPass( minunitState *testResults)
 /**
  * \brief Test passing mutest check
  */
-MINUNIT_ADD(minunitTestCheckPass)
+MINUNIT_ADD(minunitTestCheckPass, NULL, NULL)
 {
     minunitState localState;
     localState.executed = 0;
