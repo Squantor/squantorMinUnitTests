@@ -20,6 +20,7 @@ int testSetupExecuted;
  */
 MINUNIT_SETUP(minunitTestSetup)
 {
+    minUnitPass();  // added to supress warnings
     testSetupExecuted = 123456789;
     return;
 }
@@ -29,6 +30,7 @@ MINUNIT_SETUP(minunitTestSetup)
  */
 MINUNIT_TEARDOWN(minunitTestTeardown)
 {
+    minUnitPass();  // added to supress warnings
     return;
 }
 
