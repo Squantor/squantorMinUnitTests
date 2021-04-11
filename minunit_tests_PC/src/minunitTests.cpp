@@ -18,7 +18,7 @@ int testSetupExecuted;
 /**
  * \brief test testSetup function
  */
-void minunitTestSetup(void)
+MINUNIT_SETUP(minunitTestSetup)
 {
     testSetupExecuted = 123456789;
     return;
@@ -27,7 +27,7 @@ void minunitTestSetup(void)
 /**
  * \brief test testTeardown function
  */
-void minunitTestTeardown(void)
+MINUNIT_TEARDOWN(minunitTestTeardown)
 {
     return;
 }
