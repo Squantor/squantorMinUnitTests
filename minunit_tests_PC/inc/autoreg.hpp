@@ -8,14 +8,13 @@
 #ifndef AUTOREG_HPP
 #define AUTOREG_HPP
 
-#define AUTOREG_ADD(name)                                                               \
-    static void autoreg_##name(void);                                                   \
-    static void __attribute__((constructor())) __construct_autoreg_##name(void) {    \
-        autoreg_construct_impl(#name, &autoreg_##name);                                  \
-    }                                                                                   \
-    static void autoreg_##name(void)
+#define AUTOREG_ADD(name)                                                       \
+  static void autoreg_##name(void);                                             \
+  static void __attribute__((constructor())) __construct_autoreg_##name(void) { \
+    autoreg_construct_impl(#name, &autoreg_##name);                             \
+  }                                                                             \
+  static void autoreg_##name(void)
 
-#define AUTOREG_RUN(argc, argv)     \
-    autoregRun(argc, argv)
+#define AUTOREG_RUN(argc, argv) autoregRun(argc, argv)
 
 #endif

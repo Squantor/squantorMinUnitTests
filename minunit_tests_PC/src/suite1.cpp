@@ -7,7 +7,6 @@
 #include <MinUnit.h>
 
 #pragma GCC diagnostic ignored "-Wunused-parameter"
-MINUNIT_ADD(suite1, NULL, NULL)
-{
-    // check registration across multiple compilation units
+MINUNIT_ADD(suite1, NULL, NULL) {
+  // check registration across multiple compilation units
 }
